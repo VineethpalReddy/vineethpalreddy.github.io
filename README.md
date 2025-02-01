@@ -1,2 +1,2 @@
-# laxminarayanav7416.github.io
-Personal Portfolio website
+# vineethpalreddy.github.io
+Personal Portfolio website of Vineethpal Reddy Adla
