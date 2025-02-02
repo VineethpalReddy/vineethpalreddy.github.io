@@ -7,9 +7,24 @@ title: Home
   <h4>Bio</h4>
 
   <p>
+    I am Vineethpal Reddy Adla, a passionate and results-driven Software Engineer with a Masters degree in Information
+    Systems from Saint Louis University. With a strong foundation in data engineering, cloud computing, and full-stack
+    development, I thrive on solving complex problems and building scalable, efficient systems. My expertise spans
+    across a wide range of technologies, including Python, Apache Spark, AWS, Docker, and ReactJS, among others.
   </p>
 
   <p>
+    I have a proven track record of delivering impactful solutions in diverse roles. As a Senior Software Engineer at
+    Talent INC, I successfully implemented a caching mechanism that reduced application costs by 60% by eliminating
+    redundant database queries. I also managed end-to-end data engineering pipelines using Apache Airflow and Spark,
+    contributing to significant cost savings and performance improvements.
+  </p>
+
+  <p>
+    During my tenure as a Solution Architect at Colgate-Palmolive, I authored over 500,000 lines of Python code,
+    building robust data pipelines and REST APIs. I implemented Slow Changing Dimensions (SCD) using the Data Build Tool
+    (DBT), focusing on SCD-2 to track change patterns that influenced critical calculations. My work in batch processing
+    and time series data analysis has been instrumental in driving data-driven decision-making.
   </p>
 
 </div>
@@ -35,9 +50,6 @@ title: Home
     <li>
       <div class="button" data-ref="#sade-be-fe">SADE GUI & Backend</div>
     </li>
-    <li>
-      <div class="button active" data-ref="#sade-simulation-plugins">SADE Sim-Plugins</div>
-    </li>
   </ul>
 
   <!-- Tab: sade backend frontend -->
@@ -45,24 +57,6 @@ title: Home
 
     <div class="tab-pane" id="sade-be-fe">
       {% assign projects = site.data.projects.projects | where: "identifier", "sade-be-fe" %}
-      {% for project in projects %}
-      <div class="paper">
-        <h5>{{ project.title }}</h5>
-        <p>{{ project.subtitle }} <b>({{ project.timeline }})</b></p>
-        <div>
-          <p>{{ project.description }} </p>
-        </div>
-        <div>
-          {{ project.workContribution }}
-        </div>
-      </div>
-      {% endfor %}
-    </div>
-
-    <!-- Tab: sade plugins -->
-
-    <div class="tab-pane active" id="sade-simulation-plugins">
-      {% assign projects = site.data.projects.projects | where: "identifier", "sade-simulation-plugins" %}
       {% for project in projects %}
       <div class="paper">
         <h5>{{ project.title }}</h5>
